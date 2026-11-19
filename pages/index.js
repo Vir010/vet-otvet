@@ -100,7 +100,7 @@ export default function Home() {
         <div className="container header__inner">
           <a href="#home" className="logo" onClick={closeMenu}>
             <Image
-              src="/images/logo.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/logo.png`}
               alt="Логотип ВетОтвет"
               width={58}
               height={58}
@@ -594,7 +594,7 @@ export default function Home() {
         <div className="container">
           <div className="footer__top">
             <a href="#home" className="logo logo--footer">
-              <Image src="/images/logo.png" alt="ВетОтвет" width={48} height={48} />
+              <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/logo.png`} alt="ВетОтвет" width={48} height={48} />
               <span className="logo__text">
                 <strong>ВетОтвет</strong>
                 <small>Ветеринарная клиника</small>

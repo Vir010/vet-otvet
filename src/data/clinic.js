@@ -14,17 +14,17 @@ export const clinic = {
 
   slides: [
     {
-      image: '/images/hero-dog-cat.jpg',
+      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/hero-dog-cat.jpg`,
       title: 'Здоровье питомца — наша забота',
       subtitle: 'Внимательное отношение и ветеринарная помощь для ваших любимцев'
     },
     {
-      image: '/images/hero-dogs.jpg',
+      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/hero-dogs.jpg`,
       title: 'Они заслуживают лучшего',
       subtitle: 'Заботимся о здоровье домашних животных на каждом этапе жизни'
     },
     {
-      image: '/images/hero-puppy.jpg',
+      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/hero-puppy.jpg`,
       title: 'Забота начинается с доверия',
       subtitle: 'Профилактика, диагностика и помощь вашим питомцам'
     }
